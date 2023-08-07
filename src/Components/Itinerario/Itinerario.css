@@ -30,6 +30,7 @@
     height: 400px;
     background-color: grey;
     margin-right: 70px;
+    color: white;
 }
 
 .itinerario-recepcion {
@@ -42,5 +43,6 @@
     max-width: 30%;
     height: 400px;
     margin-left: 70px;
-    background-color: red;
+    background-color: grey;
+    color: white;
 }

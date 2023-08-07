@@ -1,3 +1,54 @@
-.vestimenta {
-    
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.title {
+    text-align: center;
+    margin-bottom: 10px;
+    margin-top: 30px;
+}
+
+.vestimenta-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    width: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.box-container {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    align-items: center;
+    justify-content: center;
+    border: 15px solid black;
+    border-radius: 25px;
+    max-width: 10%;
+    height: 400px;
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+}
+
+.imagen {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: auto;
+}
+.pareja {
+    width: 300px;
+    height: 300px;
+}
+
+.vertical {
+    writing-mode: vertical-rl;
+    text-orientation: upright;
+    transform: rotate(0deg);
+    white-space: nowrap;
+    padding-bottom: 15px;
+    padding-top: 15px;
 }
