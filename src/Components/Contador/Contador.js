@@ -73,7 +73,7 @@ const Contador = () => {
   return (
     <div className="countdown-container">
       <div className="title">
-        <h1>CUÁNTO FALTA??</h1>
+        <h1>CUÁNTO FALTA?</h1>
       </div>
       <div className="countdown-timer-horizontal">
         <div className="countdown-item">
