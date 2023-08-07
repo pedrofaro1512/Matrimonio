@@ -1,3 +1,32 @@
-.nosotros {
-    
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.title {
+    text-align: center;
+    margin-bottom: 10px;
+    margin-top: 30px;
+}
+
+.nosotros-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+    padding: 30px;
+    box-sizing: border-box;
+}
+
+.nosotros-text,
+.nosotros-image {
+    flex: 1;
+    padding: 30px;
+    max-width: 50%;
+}
+
+.nosotros-image img {
+    max-width: 100%;
+    height: auto;
 }

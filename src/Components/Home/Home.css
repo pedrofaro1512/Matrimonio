@@ -1,3 +1,4 @@
-.home {
-    
+.carousel-item img {
+    width: 100%; /* El 100% asegura que todas las imágenes tengan el mismo ancho */
+    height: auto; /* Esto permite que la altura se ajuste automáticamente para mantener la proporción */
 }

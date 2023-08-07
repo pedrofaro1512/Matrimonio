@@ -1,3 +1,10 @@
-.header {
-    
+.menu-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
 }
+
+.ant-menu-item {
+    font-size: 20px;
+  }
