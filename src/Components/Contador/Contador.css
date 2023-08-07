@@ -1,3 +1,27 @@
-.contador {
-
+.countdown-timer-horizontal {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 900px; /* Ajusta el ancho máximo según tus preferencias */
+    margin: 0 auto; /* Centrar horizontalmente */
 }
+  
+.countdown-item {
+    text-align: center;
+}
+
+.countdown-item h4 {
+    font-size: 50px; /* Ajusta el tamaño de fuente de los números según tus preferencias */
+    margin-bottom: 5px; /* Espacio inferior para separar el número de las palabras */
+}
+  
+.countdown-item span {
+    display: block;
+    font-size: 40px;
+}
+  
+.title {
+    text-align: center;
+    margin-top: 30px;
+}
+  
