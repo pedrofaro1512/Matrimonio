@@ -20,14 +20,22 @@ function App() {
     <div>
       <Header />
       <Home />
-      <Nosotros />
-      <Contador />
+      <div id="nosotros">
+        <Nosotros />
+      </div>
+      <div id="cronometro">
+        <Contador />
+      </div>
       <Itinerario />
       <Vestimenta />
-      <Momentos />
+      <div id="momentos">
+        <Momentos />
+      </div>
       <Regalos />
       <Comentarios />
-      <Confirmacion />
+      <div id="confirmacion">
+        <Confirmacion />
+      </div>
       <FooterM />
       <>
         <FloatButton
