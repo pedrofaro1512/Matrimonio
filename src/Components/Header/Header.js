@@ -23,7 +23,7 @@ const items = [
 ];
 
 const Header = () => {
-  const [current, setCurrent] = useState("nosotros");
+  const [current, setCurrent] = useState("null");
   const onClick = (event) => {
     setCurrent(event.key);
   };
