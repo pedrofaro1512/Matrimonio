@@ -1,5 +1,6 @@
+import React, { useState } from "react";
 import Header from "./Components/Header/Header";
-import Footer from "./Components/Footer/Footer";
+import FooterM from "./Components/Footer/Footer";
 import Nosotros from "./Components/Nosotros/Nosotros";
 import Contador from "./Components/Contador/Contador";
 import Itinerario from "./Components/Itinerario/Itinerario";
@@ -10,22 +11,73 @@ import Home from "./Components/Home/Home";
 import Momentos from "./Components/Momentos/Momentos";
 import Vestimenta from "./Components/Vestimenta/Vestimenta";
 
+import { QuestionCircleOutlined, UpOutlined } from "@ant-design/icons";
+import { FloatButton, Button, BackTop } from "antd";
+
 import "./App.css";
 
 function App() {
+  const [showBackTop, setShowBackTop] = useState(false);
+
+  const handleScroll = () => {
+    if (window.scrollY > 200) {
+      setShowBackTop(true);
+    } else {
+      setShowBackTop(false);
+    }
+  };
+
+  window.addEventListener("scroll", handleScroll);
+
   return (
     <div>
       <Header />
       <Home />
-      <Nosotros />
-      <Contador />
+      <div id="nosotros">
+        <Nosotros />
+      </div>
+      <div id="cronometro">
+        <Contador />
+      </div>
       <Itinerario />
       <Vestimenta />
-      <Momentos />
+      <div id="momentos">
+        <Momentos />
+      </div>
       <Regalos />
       <Comentarios />
-      <Confirmacion />
-      <Footer />
+      <div id="confirmacion">
+        <Confirmacion />
+      </div>
+      <FooterM />
+      <>
+        <BackTop
+          visibilityHeight={200}
+          style={{
+            right: 24,
+            top: 510,
+          }}
+        >
+          <Button
+            type="primary"
+            shape="circle"
+            icon={<UpOutlined />}
+            style={{
+              width: "40px",
+              height: "40px",
+            }}
+          />
+        </BackTop>
+      </>
+      <>
+        <FloatButton
+          icon={<QuestionCircleOutlined />}
+          type="primary"
+          style={{
+            right: 24,
+          }}
+        />
+      </>
     </div>
   );
 }
