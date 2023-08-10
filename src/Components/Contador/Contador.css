@@ -10,9 +10,27 @@
     text-align: center;
 }
 
+.pizarra {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 200px;
+    height: 150px;
+    background-color: var(--color-grisPizarra);
+}
+.rosado {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 200px;
+    height: 150px;
+    background-color: var(--color-beigeRosado);
+}
+
 .countdown-item h4 {
-    font-size: 50px; /* Ajusta el tamaño de fuente de los números según tus preferencias */
-    margin-bottom: 5px; /* Espacio inferior para separar el número de las palabras */
+    font-size: 60px; /* Ajusta el tamaño de fuente de los números según tus preferencias */
+    margin-bottom: 85px; /* Espacio inferior para separar el número de las palabras */
+    color: var(--color-grisClaro);
 }
   
 .countdown-item span {
@@ -20,8 +38,11 @@
     font-size: 40px;
 }
   
-.title {
+.title-contador {
     text-align: center;
     margin-top: 30px;
+    padding-bottom: 30px;
+    font-family: "titulos";
+    font-size: 25px;
 }
   

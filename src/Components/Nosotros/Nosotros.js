@@ -1,11 +1,12 @@
 import React from "react";
 import "./Nosotros.css";
+
 import imagen01 from "../../asstes/img/imagen01.jpg";
 
 const Nosotros = () => {
   return (
     <div className="container">
-      <div className="title">
+      <div className="title-nosotros">
         <h1>NOSOTROS</h1>
       </div>
       <div className="nosotros-container">

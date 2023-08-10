@@ -3,14 +3,19 @@
     flex-direction: column;
     padding-top: 2px;
     padding-bottom: 20px;
-    background-color: grey;
-    color: white;
+    background-color: var(--color-grisPizarra);
+    color: var(--color-grisClaro);
 }
 .footer-content{
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
+    font-family: "textos";
 }
 .footer-content h2 {
     margin: 0;
+}
+
+.title-footer {
+    font-family: "titulos";
 }

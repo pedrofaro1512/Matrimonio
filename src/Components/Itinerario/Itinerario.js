@@ -4,7 +4,7 @@ import "./Itinerario.css";
 const Itinerario = () => {
   return (
     <div className="container">
-      <div className="title">
+      <div className="title-itinerario">
         <h1>ITINERARIO</h1>
       </div>
       <div className="itinerario-container">

@@ -7,7 +7,7 @@ const { Footer } = Layout;
 const FooterM = () => {
   return (
     <Footer className="footer">
-      <h1>Contáctanos</h1>
+      <h1 className="title-footer">Contáctanos</h1>
       <div className="footer-content">
         <div>
           <h2>Natalia Cortes</h2>

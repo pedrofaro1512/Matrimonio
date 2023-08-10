@@ -1,0 +1,9 @@
+@font-face {
+    font-family: "titulos";
+    src: url('../Fonts/SIFONN_BASIC.otf') format('opentype');
+}
+
+@font-face {
+    font-family: "textos";
+    src: url('../Fonts/Forum-Regular.ttf') format('truetype');
+}
