@@ -5,7 +5,7 @@ import "./Comentarios.css";
 const Comentarios = () => {
   return (
     <div className="container">
-      <div className="title">
+      <div className="title-comentarios">
         <h1>COMENTARIOS</h1>
       </div>
     </div>

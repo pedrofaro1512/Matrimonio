@@ -4,10 +4,12 @@
     align-items: center;
 }
 
-.title {
+.title-itinerario {
     text-align: center;
     margin-bottom: 10px;
     margin-top: 30px;
+    font-family: "titulos";
+    font-size: 25px;
 }
 
 .itinerario-container {
@@ -28,9 +30,11 @@
     padding: 30px;
     max-width: 30%;
     height: 400px;
-    background-color: grey;
+    background-color: var(--color-grisPizarra);
     margin-right: 70px;
-    color: white;
+    color: var(--color-grisClaro);
+    font-family: "textos";
+    font-size: 20px;
 }
 
 .itinerario-recepcion {
@@ -43,6 +47,8 @@
     max-width: 30%;
     height: 400px;
     margin-left: 70px;
-    background-color: grey;
-    color: white;
+    background-color: var(--color-grisPizarra);
+    color: var(--color-grisClaro);
+    font-family: "textos";
+    font-size: 20px;
 }

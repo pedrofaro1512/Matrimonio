@@ -5,7 +5,7 @@ import pareja from "../../asstes/img/pareja.svg";
 const Vestimenta = () => {
   return (
     <div className="container">
-      <div className="title">
+      <div className="title-vestimenta">
         <h1>CÓDIGO DE VESTIMENTA</h1>
       </div>
       <div className="vestimenta-container">

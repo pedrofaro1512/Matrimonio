@@ -4,7 +4,7 @@ import "./Regalos.css";
 const Regalos = () => {
   return (
     <div className="container-regalos">
-      <div className="title">
+      <div className="title-regalos">
         <h1>REGALOS</h1>
       </div>
       <div className="info-regalos">

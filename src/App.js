@@ -10,7 +10,7 @@ import Comentarios from "./Components/Comentarios/Comentarios";
 import Home from "./Components/Home/Home";
 import Momentos from "./Components/Momentos/Momentos";
 import Vestimenta from "./Components/Vestimenta/Vestimenta";
-
+// Sifonn + Forum
 import { QuestionCircleOutlined, UpOutlined } from "@ant-design/icons";
 import { FloatButton, Button, BackTop } from "antd";
 
