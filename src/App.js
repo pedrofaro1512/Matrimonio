@@ -10,6 +10,7 @@ import Comentarios from "./Components/Comentarios/Comentarios";
 import Home from "./Components/Home/Home";
 import Momentos from "./Components/Momentos/Momentos";
 import Vestimenta from "./Components/Vestimenta/Vestimenta";
+import Rueda from "./Components/Rueda/Rueda";
 // Sifonn + Forum
 import { QuestionCircleOutlined, UpOutlined } from "@ant-design/icons";
 import { FloatButton, Button, BackTop } from "antd";
@@ -42,7 +43,7 @@ function App() {
       <Itinerario />
       <Vestimenta />
       <div id="momentos">
-        <Momentos />
+        <Rueda />
       </div>
       <Regalos />
       <Comentarios />
@@ -55,7 +56,7 @@ function App() {
           visibilityHeight={200}
           style={{
             right: 24,
-            top: 510,
+            bottom: 120,
           }}
         >
           <Button
