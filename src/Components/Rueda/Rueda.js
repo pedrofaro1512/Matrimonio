@@ -1,7 +1,7 @@
 import React from "react";
-import imagen01 from "../../asstes/img/imagen01.jpg";
-import imagen02 from "../../asstes/img/imagen02.jpg";
-import imagen03 from "../../asstes/img/imagen03.jpg";
+import compromiso from "../../asstes/img/compromiso.jpg";
+import cita from "../../asstes/img/cita.jpg";
+import viaje from "../../asstes/img/viaje.jpg";
 import imagen04 from "../../asstes/img/imagen04.jpg";
 import imagen05 from "../../asstes/img/imagen05.jpg";
 
@@ -17,7 +17,7 @@ const Rueda = () => {
         <div className="card">
           <div className="box">
             <div className="imgMoments">
-              <img src={imagen01} alt="imagen01"></img>
+              <img src={imagen04} alt="imagen01"></img>
             </div>
             <div className="content">
               <div>
@@ -33,7 +33,7 @@ const Rueda = () => {
         <div className="card">
           <div className="box">
             <div className="imgMoments">
-              <img src={imagen04} alt="imagen04"></img>
+              <img src={cita} alt="cita"></img>
             </div>
             <div className="content">
               <div>
@@ -46,7 +46,7 @@ const Rueda = () => {
         <div className="card">
           <div className="box">
             <div className="imgMoments">
-              <img src={imagen02} alt="imagen02"></img>
+              <img src={imagen05} alt="imagen02"></img>
             </div>
             <div className="content">
               <div>
@@ -62,7 +62,7 @@ const Rueda = () => {
         <div className="card">
           <div className="box">
             <div className="imgMoments">
-              <img src={imagen03} alt="imagen03"></img>
+              <img src={imagen04} alt="imagen03"></img>
             </div>
             <div className="content">
               <div>
@@ -78,7 +78,7 @@ const Rueda = () => {
         <div className="card">
           <div className="box">
             <div className="imgMoments">
-              <img src={imagen05} alt="imagen05"></img>
+              <img src={viaje} alt="viaje"></img>
             </div>
             <div className="content">
               <div>
@@ -94,7 +94,7 @@ const Rueda = () => {
         <div className="card">
           <div className="box">
             <div className="imgMoments">
-              <img src={imagen01} alt="imagen01"></img>
+              <img src={compromiso} alt="compromiso"></img>
             </div>
             <div className="content">
               <div>
@@ -110,7 +110,7 @@ const Rueda = () => {
         <div className="card">
           <div className="box">
             <div className="imgMoments">
-              <img src={imagen02} alt="imagen02"></img>
+              <img src={imagen05} alt="imagen02"></img>
             </div>
             <div className="content">
               <div>
