@@ -7,7 +7,7 @@
     padding-bottom: 20px;
     background-color: var(--color-grisPalido);
     border-radius: 10px;
-    margin-bottom: 60px;
+    margin-bottom: 100px;
 }
 
 .title-confirmacion {
@@ -27,7 +27,8 @@
 }
 
 .button-form {
-    margin-top: 40px;
+    margin-top: 15px;
+    margin-bottom: 15px;
     display: flex;
     justify-content: center;
 }

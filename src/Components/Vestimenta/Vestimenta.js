@@ -1,6 +1,7 @@
 import React from "react";
 import "./Vestimenta.css";
-import pareja from "../../asstes/img/pareja.svg";
+import hombres from "../../asstes/img/hombres.svg";
+import mujeres from "../../asstes/img/mujeres.svg";
 
 const Vestimenta = () => {
   return (
@@ -9,21 +10,24 @@ const Vestimenta = () => {
         <h1>CÓDIGO DE VESTIMENTA</h1>
       </div>
       <div className="vestimenta-container">
-        <div className="box-container">
-          <div className="vertical">
-            <h1>Hombres</h1>
+        <a
+          href="https://co.pinterest.com/xiolar/trajes-para-boda-de-hombre/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <div className="imagen">
+            <img src={hombres} alt="Hombres" className="hombres" />
           </div>
-          <h2>Formal</h2>
-        </div>
-        <div className="imagen">
-          <img src={pareja} alt="Pareja" className="pareja" />
-        </div>
-        <div className="box-container">
-          <div className="vertical">
-            <h1>Mujeres</h1>
+        </a>
+        <a
+          href="https://www.pinterest.es/bodaclick/vestidos-invitadas/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <div className="imagen">
+            <img src={mujeres} alt="Mujeres" className="hombres" />
           </div>
-          <h2>Formal</h2>
-        </div>
+        </a>
       </div>
     </div>
   );

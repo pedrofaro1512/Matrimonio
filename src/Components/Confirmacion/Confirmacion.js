@@ -1,12 +1,20 @@
 import React from "react";
 import "./Confirmacion.css";
-import { Form, Input, Radio, Button, Checkbox, message } from "antd";
+import { Form, Input, Radio, Button, Checkbox, message, Select } from "antd";
 
 const Confirmacion = () => {
   const [form] = Form.useForm();
 
+  const onChange = (value) => {
+    console.log(`selected ${value}`);
+  };
+  const onSearch = (value) => {
+    console.log("search:", value);
+  };
+
   const onFinish = (values) => {
     console.log("Form data:", values);
+    console.log(`selected ${values}`);
     message.success({
       content: "¡Asistencia confirmada!",
       style: {
@@ -25,7 +33,9 @@ const Confirmacion = () => {
         <Form form={form} onFinish={onFinish}>
           <Form.Item
             name="name"
-            label="Nombre"
+            label={
+              <span style={{ fontWeight: "bold", fontSize: 20 }}>Nombre</span>
+            }
             rules={[{ required: true, message: "Por favor ingresa tu nombre" }]}
           >
             <Input style={{ width: "350px" }} />
@@ -33,40 +43,107 @@ const Confirmacion = () => {
 
           <Form.Item
             name="Novia/Novio"
-            label="De parte de"
+            label={
+              <span style={{ fontWeight: "bold", fontSize: 20 }}>
+                De parte de
+              </span>
+            }
             rules={[
               { required: true, message: "Por favor selecciona una opción" },
             ]}
           >
             <Radio.Group>
-              <Radio value="novia">Novia</Radio>
-              <Radio value="novio">Novio</Radio>
+              <Radio value="novia" style={{ fontSize: 20 }}>
+                Novia
+              </Radio>
+              <Radio value="novio" style={{ fontSize: 20 }}>
+                Novio
+              </Radio>
             </Radio.Group>
           </Form.Item>
 
           <Form.Item
             name="Vegetariano"
-            label="Eres vegetarian@"
+            label={
+              <span style={{ fontWeight: "bold", fontSize: 20 }}>
+                Eres vegetarian@
+              </span>
+            }
             rules={[
               { required: true, message: "Por favor selecciona una opción" },
             ]}
           >
             <Radio.Group>
-              <Radio value="si">Si</Radio>
-              <Radio value="no">No</Radio>
+              <Radio value="si" style={{ fontSize: 20 }}>
+                Si
+              </Radio>
+              <Radio value="no" style={{ fontSize: 20 }}>
+                No
+              </Radio>
             </Radio.Group>
           </Form.Item>
 
           <Form.Item
+            name="Menu"
+            label={
+              <span style={{ fontWeight: "bold", fontSize: 20 }}>
+                Escoge tu menú
+              </span>
+            }
+            rules={[
+              { required: true, message: "Por favor selecciona una opción" },
+            ]}
+          >
+            <Select
+              showSearch
+              placeholder="Selecciona el menú"
+              optionFilterProp="children"
+              onChange={onChange}
+              onSearch={onSearch}
+              filterOption={(input, option) =>
+                (option?.label ?? "")
+                  .toLowerCase()
+                  .includes(input.toLowerCase())
+              }
+              options={[
+                {
+                  value: "res",
+                  label: "Res",
+                },
+                {
+                  value: "cerdo",
+                  label: "Cerdo",
+                },
+                {
+                  value: "pescado",
+                  label: "Pescado",
+                },
+                {
+                  value: "ensalada",
+                  label: "Ensalada",
+                },
+              ]}
+            />
+          </Form.Item>
+
+          <Form.Item
             name="Asistira"
-            label="Asisitiras a"
+            label={
+              <span style={{ fontWeight: "bold", fontSize: 20 }}>
+                Asistiras a
+              </span>
+            }
             rules={[
               { required: true, message: "Por favor selecciona una opción" },
             ]}
           >
             <Checkbox.Group>
-              <Checkbox value="Ceremonia">Ceremonia</Checkbox>
-              <Checkbox value="Recepción">Recepción</Checkbox>
+              <Checkbox value="Ceremonia" style={{ fontSize: 20 }}>
+                Ceremonia
+              </Checkbox>
+              <Checkbox value="Recepción" style={{ fontSize: 20 }}>
+                Recepción
+              </Checkbox>
             </Checkbox.Group>
           </Form.Item>
 
