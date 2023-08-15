@@ -23,8 +23,12 @@ const Rueda = () => {
               <div>
                 <h2>Nos conocimos</h2>
                 <p>
-                  Nos conocimos en una entrevista de trabajo donde nos flechamos
-                  de inmediato...
+                  En medio del turbulento escenario de la pandemia del Covid-19,
+                  floreció un lazo excepcional que trascendió las pantallas,
+                  uniendo nuestras almas virtualmente. Ese destello inicial,
+                  surgido mientras el mundo enfrentaba la distancia física, nos
+                  instó a explorarnos mutuamente en un nivel profundo y
+                  conmovedor.
                 </p>
               </div>
             </div>
@@ -38,7 +42,16 @@ const Rueda = () => {
             <div className="content">
               <div>
                 <h2>Nuestra primera cita</h2>
-                <p>Fue en un café muy acogedor con flores y poca luz.....</p>
+                <p>
+                  Nuestra primera cita trascendió lo esperado al compartir un
+                  café de origen único, reflejo de tu singularidad. En ese
+                  rincón acogedor, el aroma del café fresco anticipaba momentos
+                  especiales. Entre risas y sorbos, la conversación fluía,
+                  tejiendo una narrativa propia. Esa taza de café era más que
+                  una bebida, era un lienzo para descubrir gestos y melodías.
+                  Fue ahí donde nuestras historias comenzaron a entrelazarse,
+                  creando un prólogo prometedor.
+                </p>
               </div>
             </div>
           </div>
@@ -52,8 +65,12 @@ const Rueda = () => {
               <div>
                 <h2>Nuestro primer beso</h2>
                 <p>
-                  Fue en un café super lindo lleno de aromas y sabores
-                  exóticos....
+                  Nuestro primer beso transcurrió en una gélida noche de la
+                  ciudad, después de caminar juntos un tiempo. Bajo el cielo
+                  estrellado, el ambiente cargado de complicidad hizo que el
+                  frío se desvaneciera. Fue un beso que destiló la emoción de
+                  cada paso y palabra compartida, sellando el recuerdo de una
+                  noche que transformó nuestras historias en una.
                 </p>
               </div>
             </div>
@@ -68,8 +85,15 @@ const Rueda = () => {
               <div>
                 <h2>Nos hicimos novios</h2>
                 <p>
-                  Fue magico, era como un cuento de adas en un bosque
-                  encantado.....
+                  Nuestro camino hacia el noviazgo fue una danza emocional que
+                  nos unió de manera inesperada. A través de risas y
+                  confidencias, descubrimos que compartíamos sueños y anhelos.
+                  Los momentos juntos se tejieron con hilos de complicidad y
+                  cariño, y poco a poco, nuestras miradas se volvieron cómplices
+                  de un sentimiento que no podíamos ignorar. Fue en un instante
+                  de sinceridad compartida cuando nuestras manos se entrelazaron
+                  por primera vez, sellando un pacto silencioso que marcó el
+                  comienzo de un amor que ha iluminado cada paso desde entonces.
                 </p>
               </div>
             </div>
@@ -84,8 +108,12 @@ const Rueda = () => {
               <div>
                 <h2>Nuestro primer viaje juntos</h2>
                 <p>
-                  Fue a un valle encantado lleno de flores, árboles altos y
-                  frondosos.....
+                  Guatavita, un lugar impregnado de historia y misticismo,
+                  vivimos nuestro primer viaje juntos. La sorpresa radicó en la
+                  elección de un medio tan audaz como una motocicleta para
+                  llegar allí, alejándonos de lo convencional. Pero lo que más
+                  tocó mi corazón fue la sencillez y la alegría de mi prometida
+                  ante cada nueva experiencia.
                 </p>
               </div>
             </div>
@@ -98,10 +126,18 @@ const Rueda = () => {
             </div>
             <div className="content">
               <div>
-                <h2>Pedida de mano</h2>
+                <h2>Nuestro compromiso</h2>
                 <p>
-                  Fue en la candelaria, muy romantico, con velas y rosas, algo
-                  de vino y buena comida.....
+                  Nuestro compromiso fue un capítulo inolvidable, tejido con
+                  sorpresa y emoción. En un restaurante romántico, con el cielo
+                  estrellado como testigo, celebramos nuestro aniversario de
+                  novios de una manera que superó todas las expectativas.
+                  Acompañando el momento, una carta especial que escribí con
+                  todo mi corazón se convirtió en el vínculo que unía nuestras
+                  palabras a nuestros sentimientos más profundos. En ese
+                  instante mágico, con la vista de las estrellas como fondo, le
+                  entregué mi promesa de amor eterno y juntos dimos un paso
+                  adelante en esta hermosa historia que estamos construyendo.
                 </p>
               </div>
             </div>

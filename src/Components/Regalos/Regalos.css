@@ -15,8 +15,9 @@
 .info-regalos {
     background-color: grey;
     border-radius: 25px;
-    width: 700px;
-    height: 210px;
+    width: 1000px;
+    height: 500px;
+    padding-bottom: 20px;
 }
 .info-regalos p {
     font-size: 30px;
