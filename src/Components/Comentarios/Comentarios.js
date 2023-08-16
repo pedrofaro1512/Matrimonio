@@ -6,7 +6,7 @@ const Comentarios = () => {
   return (
     <div className="container">
       <div className="title-comentarios">
-        <h1>COMENTARIOS</h1>
+        <span>Comentarios</span>
       </div>
     </div>
   );

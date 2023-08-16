@@ -8,8 +8,8 @@
     text-align: center;
     margin-bottom: 10px;
     margin-top: 30px;
-    font-family: "titulos";
-    font-size: 25px;
+    font-family: "titulo01";
+    font-size: 100px;
 }
 
 .itinerario-container {
@@ -35,6 +35,7 @@
     color: var(--color-grisClaro);
     font-family: "textos";
     font-size: 20px;
+    border-radius: 10px;
 }
 
 .itinerario-recepcion {
@@ -51,4 +52,5 @@
     color: var(--color-grisClaro);
     font-family: "textos";
     font-size: 20px;
+    border-radius: 10px;
 }

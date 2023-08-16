@@ -5,7 +5,7 @@ const Itinerario = () => {
   return (
     <div className="container">
       <div className="title-itinerario">
-        <h1>ITINERARIO</h1>
+        <span>Itinerario</span>
       </div>
       <div className="itinerario-container">
         <div className="itinerario-ceremonia">

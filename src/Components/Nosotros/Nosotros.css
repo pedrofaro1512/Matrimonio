@@ -6,9 +6,9 @@
 
 .title-nosotros {
     text-align: center;
-    margin-top: 30px;
-    font-family: "titulos";
-    font-size: 25px;
+    margin-top: 20px;
+    font-family: "titulo01";
+    font-size: 100px;
 }
 
 .nosotros-container {
@@ -16,7 +16,7 @@
     flex-wrap: wrap;
     justify-content: center;
     width: 100%;
-    padding: 30px;
+    padding: 10px;
     box-sizing: border-box;
 }
 

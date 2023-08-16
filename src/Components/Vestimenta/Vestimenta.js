@@ -7,7 +7,7 @@ const Vestimenta = () => {
   return (
     <div className="container">
       <div className="title-vestimenta">
-        <h1>CÓDIGO DE VESTIMENTA</h1>
+        <span>Código de vestimenta</span>
       </div>
       <div className="vestimenta-container">
         <a
