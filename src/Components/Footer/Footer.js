@@ -1,5 +1,7 @@
 import React from "react";
 import { Layout } from "antd";
+import Letras from "../../asstes/img/Letras03.png";
+
 import "./Footer.css";
 
 const { Footer } = Layout;
@@ -8,6 +10,9 @@ const FooterM = () => {
   return (
     <Footer className="footer">
       <h1 className="title-footer">Contáctanos</h1>
+      <div className="letrasF">
+        <img src={Letras} alt="Letras"></img>
+      </div>
       <div className="footer-content">
         <div>
           <h2>Natalia Cortes</h2>

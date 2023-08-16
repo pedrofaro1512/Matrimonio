@@ -10,8 +10,9 @@ import Comentarios from "./Components/Comentarios/Comentarios";
 import Home from "./Components/Home/Home";
 import Vestimenta from "./Components/Vestimenta/Vestimenta";
 import Rueda from "./Components/Rueda/Rueda";
+import Reproductor from "./Components/Reproductor/Reproductor";
 import ChatBot from "./Components/ChatBot/ChatBot";
-// Sifonn + Forum
+
 import { QuestionCircleOutlined, UpOutlined } from "@ant-design/icons";
 import { FloatButton, Button, BackTop } from "antd";
 
@@ -57,7 +58,7 @@ function App() {
           visibilityHeight={200}
           style={{
             right: 24,
-            bottom: 120,
+            bottom: 160,
           }}
         >
           <Button
@@ -79,10 +80,12 @@ function App() {
           type="primary"
           style={{
             right: 24,
+            bottom: 110,
           }}
           onClick={() => setShowChatBot(!showChatBot)}
         />
       </>
+      <Reproductor />
     </div>
   );
 }
