@@ -1,0 +1,9 @@
+.Repo {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: var(--color-beigeRosado);
+    padding: 10px;
+    border-radius: 8px;
+}
+  
