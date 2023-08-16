@@ -45,7 +45,7 @@ const Confirmacion = () => {
             name="Novia/Novio"
             label={
               <span style={{ fontWeight: "bold", fontSize: 20 }}>
-                De parte de
+                Nos acompañas de parte de
               </span>
             }
             rules={[
@@ -58,27 +58,6 @@ const Confirmacion = () => {
               </Radio>
               <Radio value="novio" style={{ fontSize: 20 }}>
                 Novio
-              </Radio>
-            </Radio.Group>
-          </Form.Item>
-
-          <Form.Item
-            name="Vegetariano"
-            label={
-              <span style={{ fontWeight: "bold", fontSize: 20 }}>
-                Eres vegetarian@
-              </span>
-            }
-            rules={[
-              { required: true, message: "Por favor selecciona una opción" },
-            ]}
-          >
-            <Radio.Group>
-              <Radio value="si" style={{ fontSize: 20 }}>
-                Si
-              </Radio>
-              <Radio value="no" style={{ fontSize: 20 }}>
-                No
               </Radio>
             </Radio.Group>
           </Form.Item>
@@ -148,7 +127,7 @@ const Confirmacion = () => {
           </Form.Item>
 
           <Form.Item className="button-form">
-            <Button type="primary" htmlType="submit">
+            <Button type="primary" block htmlType="submit">
               Confirmar asistencia
             </Button>
           </Form.Item>

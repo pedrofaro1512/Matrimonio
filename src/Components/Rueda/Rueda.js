@@ -2,7 +2,7 @@ import React from "react";
 import compromiso from "../../asstes/img/compromiso.jpg";
 import cita from "../../asstes/img/cita.jpg";
 import viaje from "../../asstes/img/viaje.jpg";
-import imagen04 from "../../asstes/img/imagen04.jpg";
+import imagen03 from "../../asstes/img/imagen03.jpg";
 import imagen05 from "../../asstes/img/imagen05.jpg";
 
 import "./Rueda.css";
@@ -17,40 +17,19 @@ const Rueda = () => {
         <div className="card">
           <div className="box">
             <div className="imgMoments">
-              <img src={imagen04} alt="imagen01"></img>
-            </div>
-            <div className="content">
-              <div>
-                <h2>Nos conocimos</h2>
-                <p>
-                  En medio del turbulento escenario de la pandemia del Covid-19,
-                  floreció un lazo excepcional que trascendió las pantallas,
-                  uniendo nuestras almas virtualmente. Ese destello inicial,
-                  surgido mientras el mundo enfrentaba la distancia física, nos
-                  instó a explorarnos mutuamente en un nivel profundo y
-                  conmovedor.
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div className="card">
-          <div className="box">
-            <div className="imgMoments">
               <img src={cita} alt="cita"></img>
             </div>
             <div className="content">
               <div>
-                <h2>Nuestra primera cita</h2>
+                {/* <h2>Nuestra primera cita</h2> */}
                 <p>
-                  Nuestra primera cita trascendió lo esperado al compartir un
-                  café de origen único, reflejo de tu singularidad. En ese
-                  rincón acogedor, el aroma del café fresco anticipaba momentos
-                  especiales. Entre risas y sorbos, la conversación fluía,
-                  tejiendo una narrativa propia. Esa taza de café era más que
-                  una bebida, era un lienzo para descubrir gestos y melodías.
-                  Fue ahí donde nuestras historias comenzaron a entrelazarse,
-                  creando un prólogo prometedor.
+                  Nuestro primer encuentro superó todas las expectativas al
+                  compartir un café de origen, que reflejaba tu singularidad de
+                  manera perfecta. En aquel rincón acogedor, el aroma del café
+                  recién hecho presagiaba momentos especiales. Entre risas y
+                  sorbos, la conversación fluía sin esfuerzo, tejiendo su propia
+                  narrativa. Más que una simple bebida, esa taza de café se
+                  convirtió en un lienzo en el que descubrir gestos y melodías
                 </p>
               </div>
             </div>
@@ -63,7 +42,7 @@ const Rueda = () => {
             </div>
             <div className="content">
               <div>
-                <h2>Nuestro primer beso</h2>
+                {/* <h2>Nuestro primer beso</h2> */}
                 <p>
                   Nuestro primer beso transcurrió en una gélida noche de la
                   ciudad, después de caminar juntos un tiempo. Bajo el cielo
@@ -79,21 +58,18 @@ const Rueda = () => {
         <div className="card">
           <div className="box">
             <div className="imgMoments">
-              <img src={imagen04} alt="imagen03"></img>
+              <img src={imagen03} alt="imagen03"></img>
             </div>
             <div className="content">
               <div>
-                <h2>Nos hicimos novios</h2>
+                {/* <h2>Nos hicimos novios</h2> */}
                 <p>
                   Nuestro camino hacia el noviazgo fue una danza emocional que
                   nos unió de manera inesperada. A través de risas y
                   confidencias, descubrimos que compartíamos sueños y anhelos.
                   Los momentos juntos se tejieron con hilos de complicidad y
                   cariño, y poco a poco, nuestras miradas se volvieron cómplices
-                  de un sentimiento que no podíamos ignorar. Fue en un instante
-                  de sinceridad compartida cuando nuestras manos se entrelazaron
-                  por primera vez, sellando un pacto silencioso que marcó el
-                  comienzo de un amor que ha iluminado cada paso desde entonces.
+                  de un sentimiento que no podíamos ignorar.
                 </p>
               </div>
             </div>
@@ -106,14 +82,16 @@ const Rueda = () => {
             </div>
             <div className="content">
               <div>
-                <h2>Nuestro primer viaje juntos</h2>
+                {/* <h2>Nuestro primer viaje juntos</h2> */}
                 <p>
-                  Guatavita, un lugar impregnado de historia y misticismo,
-                  vivimos nuestro primer viaje juntos. La sorpresa radicó en la
-                  elección de un medio tan audaz como una motocicleta para
-                  llegar allí, alejándonos de lo convencional. Pero lo que más
-                  tocó mi corazón fue la sencillez y la alegría de mi prometida
-                  ante cada nueva experiencia.
+                  Guatavita, un lugar empapado de historia y misticismo, nos
+                  acogió con sus paisajes imponentes. Sin embargo, fueron sus
+                  sonrisas y risas las que se convirtieron en la melodía que
+                  embelleció cada paso de nuestro recorrido. En medio de esta
+                  majestuosidad, descubrimos que fueron los gestos cariñosos y
+                  la autenticidad compartida los elementos que verdaderamente
+                  transformaron este viaje en un tesoro dentro de nuestra
+                  historia, escapando de lo convencional.
                 </p>
               </div>
             </div>
@@ -126,34 +104,18 @@ const Rueda = () => {
             </div>
             <div className="content">
               <div>
-                <h2>Nuestro compromiso</h2>
+                {/* <h2>Nuestro compromiso</h2> */}
                 <p>
-                  Nuestro compromiso fue un capítulo inolvidable, tejido con
-                  sorpresa y emoción. En un restaurante romántico, con el cielo
-                  estrellado como testigo, celebramos nuestro aniversario de
-                  novios de una manera que superó todas las expectativas.
-                  Acompañando el momento, una carta especial que escribí con
-                  todo mi corazón se convirtió en el vínculo que unía nuestras
-                  palabras a nuestros sentimientos más profundos. En ese
-                  instante mágico, con la vista de las estrellas como fondo, le
-                  entregué mi promesa de amor eterno y juntos dimos un paso
-                  adelante en esta hermosa historia que estamos construyendo.
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div className="card">
-          <div className="box">
-            <div className="imgMoments">
-              <img src={imagen05} alt="imagen02"></img>
-            </div>
-            <div className="content">
-              <div>
-                <h2>Matrimonio</h2>
-                <p>
-                  Bueno, aca estamos con la invitación, anunciando nuestra unión
-                  por toda la vida....
+                  Nuestro compromiso representó un capítulo inolvidable, tejido
+                  con sorpresas y un cúmulo de sentimientos. En un espacio
+                  diseñado con calidez y bajo la mirada del cielo estrellado,
+                  celebramos nuestro aniversario de novios de una manera que
+                  superó todas las expectativas. Acompañando ese momento único,
+                  una carta redactada con profundo cariño se convirtió en el
+                  enlace que unió nuestras palabras con los sentimientos más
+                  profundos. En ese instante mágico, plasmé mi promesa de amor
+                  eterno, dando así un paso adelante en esta hermosa historia
+                  que juntos estamos construyendo.
                 </p>
               </div>
             </div>
