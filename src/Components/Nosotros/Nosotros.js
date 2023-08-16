@@ -5,7 +5,7 @@ const Nosotros = () => {
   return (
     <div className="container">
       <div className="title-nosotros">
-        <h1>NOSOTROS</h1>
+        <span>Nosotros</span>
       </div>
       <div className="nosotros-container">
         <div className="nosotros-text">

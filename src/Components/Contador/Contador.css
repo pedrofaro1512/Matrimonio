@@ -17,6 +17,7 @@
     width: 200px;
     height: 150px;
     background-color: var(--color-grisPizarra);
+    border-radius: 10px;
 }
 .rosado {
     display: flex;
@@ -25,6 +26,7 @@
     width: 200px;
     height: 150px;
     background-color: var(--color-beigeRosado);
+    border-radius: 10px;
 }
 
 .countdown-item h4 {
@@ -36,13 +38,14 @@
 .countdown-item span {
     display: block;
     font-size: 40px;
+    font-family: "textos";
 }
   
 .title-contador {
     text-align: center;
     margin-top: 30px;
     padding-bottom: 30px;
-    font-family: "titulos";
-    font-size: 25px;
+    font-family: "titulo01";
+    font-size: 100px;
 }
   

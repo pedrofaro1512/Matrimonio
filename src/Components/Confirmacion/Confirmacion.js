@@ -27,7 +27,7 @@ const Confirmacion = () => {
   return (
     <div className="form-container">
       <div className="title-confirmacion">
-        <h1>CONFIRMACIÓN</h1>
+        <span>Confirmación</span>
       </div>
       <div className="form">
         <Form form={form} onFinish={onFinish}>
