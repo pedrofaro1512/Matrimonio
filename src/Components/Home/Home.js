@@ -4,6 +4,7 @@ import imagen02 from "../../asstes/img/imagen02.jpg";
 import imagen03 from "../../asstes/img/imagen03.jpg";
 import imagen04 from "../../asstes/img/imagen04.jpg";
 import imagen05 from "../../asstes/img/imagen05.jpg";
+import imagen06 from "../../asstes/img/imagen06.jpg";
 import "./Home.css";
 
 import { Carousel } from "antd";
@@ -25,6 +26,9 @@ const Home = () => {
       </div>
       <div className="carousel-item">
         <img src={imagen05} alt="imagen05" />
+      </div>
+      <div className="carousel-item">
+        <img src={imagen06} alt="imagen06" />
       </div>
     </Carousel>
   );

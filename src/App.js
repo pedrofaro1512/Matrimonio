@@ -8,9 +8,9 @@ import Regalos from "./Components/Regalos/Regalos";
 import Confirmacion from "./Components/Confirmacion/Confirmacion";
 import Comentarios from "./Components/Comentarios/Comentarios";
 import Home from "./Components/Home/Home";
-import Momentos from "./Components/Momentos/Momentos";
 import Vestimenta from "./Components/Vestimenta/Vestimenta";
 import Rueda from "./Components/Rueda/Rueda";
+import ChatBot from "./Components/ChatBot/ChatBot";
 // Sifonn + Forum
 import { QuestionCircleOutlined, UpOutlined } from "@ant-design/icons";
 import { FloatButton, Button, BackTop } from "antd";
@@ -19,6 +19,7 @@ import "./App.css";
 
 function App() {
   const [showBackTop, setShowBackTop] = useState(false);
+  const [showChatBot, setShowChatBot] = useState(false);
 
   const handleScroll = () => {
     if (window.scrollY > 200) {
@@ -70,6 +71,8 @@ function App() {
           />
         </BackTop>
       </>
+
+      {/* {showChatBot && <ChatBot isVisible={showChatBot} />} */}
       <>
         <FloatButton
           icon={<QuestionCircleOutlined />}
@@ -77,6 +80,7 @@ function App() {
           style={{
             right: 24,
           }}
+          onClick={() => setShowChatBot(!showChatBot)}
         />
       </>
     </div>
