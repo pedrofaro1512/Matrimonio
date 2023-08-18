@@ -13,8 +13,8 @@
 
 .letrasH img {
     position: absolute;
-    top: 0;
+    top: 10px;
     left: 20px;
-    width: 100px;
+    width: 140px;
     height: 100px;
 }

@@ -126,11 +126,7 @@ const Confirmacion = () => {
             </Checkbox.Group>
           </Form.Item>
 
-          <Form.Item className="button-form">
-            <Button type="primary" block htmlType="submit">
-              Confirmar asistencia
-            </Button>
-          </Form.Item>
+          <button type="submit">Confirmar asistencia</button>
         </Form>
       </div>
     </div>

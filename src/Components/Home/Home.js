@@ -26,7 +26,7 @@ const Home = () => {
           <div className="carousel-item" key={index}>
             <div className="image-container">
               <img src={image.src} alt={image.alt} />
-              <div className="image-overlay">Natalia y Felipe</div>
+              <div className="image-overlay">Nata y Pipe</div>
               <div className="image-overlay-bottom">Se casan</div>
             </div>
           </div>

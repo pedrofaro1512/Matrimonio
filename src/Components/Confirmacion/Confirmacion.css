@@ -23,12 +23,25 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 500px
+    height: 500px;
+    padding-top: 60px;
 }
 
-.button-form {
-    margin-top: 15px;
-    margin-bottom: 15px;
-    display: flex;
-    justify-content: center;
+
+.form button {
+    background-color: var(--color-grisPizarra);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+    margin: 0 auto;
+    display: block;
+    transition: background-color 0.3s, color 0.3s;
+    font-size: 15px;
+}
+
+.form button:hover {
+    background-color: var(--color-grisClaro);
+    color: black;
 }

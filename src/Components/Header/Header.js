@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import "./Header.css";
 import { Menu } from "antd";
 import { Link } from "react-scroll";
-import Letras from "../../asstes/img/Letras03.png";
+import Letras from "../../asstes/img/Iniciales.png";
 
 const items = [
   {
