@@ -1,6 +1,6 @@
 import React from "react";
 import { Layout } from "antd";
-import Letras from "../../asstes/img/Letras03.png";
+import Letras from "../../asstes/img/InicialesB.png";
 
 import "./Footer.css";
 
