@@ -1,6 +1,6 @@
 import React from "react";
 import { Layout } from "antd";
-import Letras from "../../asstes/img/InicialesB.png";
+import couple from "../../asstes/img/couple.png";
 
 import "./Footer.css";
 
@@ -11,7 +11,7 @@ const FooterM = () => {
     <Footer className="footer">
       <h1 className="title-footer">Contáctanos</h1>
       <div className="letrasF">
-        <img src={Letras} alt="Letras"></img>
+        <img src={couple} alt="Letras"></img>
       </div>
       <div className="footer-content">
         <div>

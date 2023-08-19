@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import "./Header.css";
 import { Menu } from "antd";
 import { Link } from "react-scroll";
-import Letras from "../../asstes/img/Iniciales.png";
+import couple from "../../asstes/img/couple.png";
 
 const items = [
   {
@@ -32,7 +32,7 @@ const Header = () => {
   return (
     <div className="menu-container">
       <div className="letrasH">
-        <img src={Letras} alt="Letras"></img>
+        <img src={couple} alt="Letras"></img>
       </div>
       <div className="menu-items">
         <Menu onClick={onClick} selectedKeys={[current]} mode="horizontal">

@@ -36,6 +36,11 @@
     font-family: "textos";
     font-size: 20px;
     border-radius: 10px;
+    padding-bottom: 50px;
+}
+
+.dividerI {
+    width: 100%;
 }
 
 .itinerario-recepcion {
@@ -53,4 +58,20 @@
     font-family: "textos";
     font-size: 20px;
     border-radius: 10px;
+    padding-bottom: 50px;
 }
+
+.itinerario-container a {
+    color: var(--color-grisClaro);
+    text-decoration: none;
+    transition: color 0.3s;
+    font-size: 30px;
+}
+
+.itinerario-container a:hover {
+    font-weight: bolder;
+}
+
+
+
+
