@@ -10,6 +10,7 @@ const Itinerario = () => {
       <div className="itinerario-container">
         <div className="itinerario-ceremonia">
           <h1>CEREMONIA</h1>
+          <hr className="dividerI" />
           <h3>Iglesia Nuestra Señora de Lourdes</h3>
           <h3>Carrera 7 # 72 - 45</h3>
           <h3>Bogotá</h3>
@@ -24,6 +25,7 @@ const Itinerario = () => {
         </div>
         <div className="itinerario-recepcion">
           <h1>RECEPCIÓN</h1>
+          <hr className="dividerI" />
           <h3>Hacienda Los Sauces</h3>
           <h3>Carrera 74a # 74 - 16</h3>
           <h3>Bogotá</h3>

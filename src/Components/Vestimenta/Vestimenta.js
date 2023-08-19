@@ -1,7 +1,7 @@
 import React from "react";
 import "./Vestimenta.css";
-import hombres from "../../asstes/img/hombres.svg";
-import mujeres from "../../asstes/img/mujeres.svg";
+import suit from "../../asstes/img/suit.png";
+import dress from "../../asstes/img/dress.png";
 
 const Vestimenta = () => {
   return (
@@ -16,7 +16,7 @@ const Vestimenta = () => {
           rel="noopener noreferrer"
         >
           <div className="imagen">
-            <img src={hombres} alt="Hombres" className="hombres" />
+            <img src={suit} alt="Hombres" className="hombres" />
           </div>
         </a>
         <a
@@ -25,10 +25,11 @@ const Vestimenta = () => {
           rel="noopener noreferrer"
         >
           <div className="imagen">
-            <img src={mujeres} alt="Mujeres" className="hombres" />
+            <img src={dress} alt="Mujeres" className="hombres" />
           </div>
         </a>
       </div>
+      <h3 className="text-help">Click en la imagen para sugerencias</h3>
     </div>
   );
 };
