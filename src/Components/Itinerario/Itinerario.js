@@ -3,7 +3,7 @@ import "./Itinerario.css";
 
 const Itinerario = () => {
   return (
-    <div className="container">
+    <div className="container-itinerario">
       <div className="title-itinerario">
         <span>Itinerario</span>
       </div>
@@ -11,7 +11,7 @@ const Itinerario = () => {
         <div className="itinerario-ceremonia">
           <h1>CEREMONIA</h1>
           <hr className="dividerI" />
-          <h3>Iglesia Nuestra Señora de Lourdes</h3>
+          <h3>Iglesia Nuestra Señora</h3>
           <h3>Carrera 7 # 72 - 45</h3>
           <h3>Bogotá</h3>
           <h3>3:30 pm</h3>

@@ -1,4 +1,4 @@
-.container {
+.container-itinerario {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -52,7 +52,6 @@
     padding: 30px;
     max-width: 30%;
     height: 400px;
-    margin-left: 70px;
     background-color: var(--color-grisPizarra);
     color: var(--color-grisClaro);
     font-family: "textos";
@@ -72,6 +71,57 @@
     font-weight: bolder;
 }
 
+/* Media query para pantallas pequeñas */
+@media (max-width: 768px) {
+    .title-itinerario {
+        text-align: center;
+        margin-bottom: -10px;
+        margin-top: 10px;
+        font-family: "titulo01";
+        font-size: 50px;
+    }
+    .itinerario-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 100%;
+        padding: 20px;
+    }
+    
+    .itinerario-ceremonia {
+        padding: 20px;
+        margin: 0 !important;
+        max-width: 90%;
+        height: 200px;
+        font-size: 20px;
+    }
+    .itinerario-recepcion {
+        padding: 20px;
+        max-width: 90%;
+        height: 200px;
+        font-size: 20px;
+        margin-top: 10px;
+    }
+    
+    .dividerI {
+        width: 100%;
+        margin: 0;
+    }
+    .itinerario-container h1 {
+        font-size: 25px;
+        margin: 0;
+    }
+    
+    .itinerario-ceremonia h3 {
+        margin: 3px 0; /* Ajusta los márgenes vertical y horizontal */
+    }
+    .itinerario-recepcion h3 {
+        margin: 3px 0; /* Ajusta los márgenes vertical y horizontal */
+    }
+    .itinerario-container a {
+        font-size: 20px;
+    }
+}
 
 
 

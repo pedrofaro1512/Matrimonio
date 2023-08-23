@@ -12,7 +12,7 @@ const Comentarios = () => {
   };
 
   return (
-    <div className="container">
+    <div className="container-comentarios">
       <div className="title-comentarios">
         <span>Comentarios</span>
       </div>

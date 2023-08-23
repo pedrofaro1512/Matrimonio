@@ -1,12 +1,12 @@
 import React from "react";
 import "./Confirmacion.css";
-import { Form, Input, Radio, Button, Checkbox, message, Select } from "antd";
+import { Form, Input, Radio, Checkbox, message, Select } from "antd";
 
 const Confirmacion = () => {
   const [form] = Form.useForm();
 
   const onChange = (value) => {
-    console.log(`selected ${value}`);
+    //console.log(`selected ${value}`);
   };
   const onSearch = (value) => {
     console.log("search:", value);
@@ -14,11 +14,12 @@ const Confirmacion = () => {
 
   const onFinish = (values) => {
     console.log("Form data:", values);
-    console.log(`selected ${values}`);
+    //console.log(`selected ${values}`);
     message.success({
       content: "¡Asistencia confirmada!",
       style: {
         fontSize: "25px",
+        fontFamily: "textos",
       },
     });
     form.resetFields();
@@ -41,7 +42,7 @@ const Confirmacion = () => {
             <Input style={{ width: "350px" }} />
           </Form.Item>
 
-          <Form.Item
+          {/* <Form.Item
             name="Novia/Novio"
             label={
               <span style={{ fontWeight: "bold", fontSize: 20 }}>
@@ -60,7 +61,7 @@ const Confirmacion = () => {
                 Novio
               </Radio>
             </Radio.Group>
-          </Form.Item>
+          </Form.Item> */}
 
           <Form.Item
             name="Menu"
@@ -105,7 +106,7 @@ const Confirmacion = () => {
             />
           </Form.Item>
 
-          <Form.Item
+          {/* <Form.Item
             name="Asistira"
             label={
               <span style={{ fontWeight: "bold", fontSize: 20 }}>
@@ -124,7 +125,7 @@ const Confirmacion = () => {
                 Recepción
               </Checkbox>
             </Checkbox.Group>
-          </Form.Item>
+          </Form.Item> */}
 
           <button type="submit">Confirmar asistencia</button>
         </Form>
