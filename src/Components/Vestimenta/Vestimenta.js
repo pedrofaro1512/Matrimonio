@@ -5,7 +5,7 @@ import dress from "../../asstes/img/dress.png";
 
 const Vestimenta = () => {
   return (
-    <div className="container">
+    <div className="container-vestimenta">
       <div className="title-vestimenta">
         <span>Código de vestimenta</span>
       </div>

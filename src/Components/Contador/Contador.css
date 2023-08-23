@@ -48,4 +48,56 @@
     font-family: "titulo01";
     font-size: 100px;
 }
+
+/* Media query para pantallas pequeñas */
+@media (max-width: 768px) {
+    .title-contador {
+        font-family: "titulo01";
+        font-size: 50px;
+        margin-top: 50px;
+        padding-bottom: 10px;
+    }
+    .countdown-timer-horizontal {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        max-width: 600px; /* Ajusta el ancho máximo según tus preferencias */
+        margin: 0 auto; /* Centrar horizontalmente */
+    }
+      
+    .countdown-item {
+        text-align: center;
+    }
+    
+    .pizarra {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 70px;
+        height: 40px;
+        background-color: var(--color-grisPizarra);
+        border-radius: 10px;
+    }
+    .rosado {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 70px;
+        height: 40px;
+        background-color: var(--color-beigeRosado);
+        border-radius: 10px;
+    }
+    
+    .countdown-item h4 {
+        font-size: 30px; /* Ajusta el tamaño de fuente de los números según tus preferencias */
+        margin-bottom: 45px; /* Espacio inferior para separar el número de las palabras */
+        color: var(--color-grisClaro);
+    }
+      
+    .countdown-item span {
+        display: block;
+        font-size: 15px;
+        font-family: "textos";
+    }
+}
   

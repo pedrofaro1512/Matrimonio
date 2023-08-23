@@ -110,3 +110,55 @@
     background-size: cover;
 }
 
+@media (max-width: 786px) {
+    .title-nosotros {
+        font-size: 50px;
+        margin-top: 10px;
+        margin-bottom: -30px;
+    }
+    .nosotros-container {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    .nosotros-text {
+        max-width: 100%;
+        margin: 0;
+        padding-top: 0;
+    }
+    .nosotros-text p {
+        font-size: 10px;
+    }
+    .nosotros-body {
+        position: relative;
+        margin-top: 40px;
+        margin-bottom: 60px;
+        text-align: center;
+    }
+    .nosotros-body ul {
+        position: absolute;
+        top: 38%;
+        left: 50%;
+        transform: translate(-40%, -50%);
+        margin-top: 50px;
+        padding-top: 0;
+        width: 270px;
+        height: 60px;
+    }
+    .nosotros-body ul li {
+        list-style: none;
+        position: absolute;
+        width: 90px;
+        height: 90px;
+        margin: -50px;
+        transform: rotate(45deg);
+        transition: .5s;
+        overflow: hidden;
+        opacity: .5;
+    }
+    .nosotros-body ul li.item5 {
+        display: none;
+    }
+}
+
+

@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import Header from "./Components/Header/Header";
 import FooterM from "./Components/Footer/Footer";
 import Nosotros from "./Components/Nosotros/Nosotros";
@@ -11,16 +11,28 @@ import Home from "./Components/Home/Home";
 import Vestimenta from "./Components/Vestimenta/Vestimenta";
 import Rueda from "./Components/Rueda/Rueda";
 import Reproductor from "./Components/Reproductor/Reproductor";
-import ChatBot from "./Components/ChatBot/ChatBot";
+//import ChatBot from "./Components/ChatBot/ChatBot";
 
 import { QuestionCircleOutlined, UpOutlined } from "@ant-design/icons";
 import { FloatButton, Button, BackTop } from "antd";
 
-import "./App.css";
+//import "./App.css";
 
 function App() {
   const [showBackTop, setShowBackTop] = useState(false);
   const [showChatBot, setShowChatBot] = useState(false);
+
+  //Código para desabilitar el click derecho
+  // const disableRightClick = (event) => {
+  //   event.preventDefault();
+  // };
+
+  // useEffect(() => {
+  //   document.addEventListener("contextmenu", disableRightClick);
+  //   return () => {
+  //     document.removeEventListener("contextmenu", disableRightClick);
+  //   };
+  // }, []);
 
   const handleScroll = () => {
     if (window.scrollY > 200) {
@@ -58,7 +70,7 @@ function App() {
           visibilityHeight={200}
           style={{
             right: 24,
-            bottom: 160,
+            bottom: 120,
           }}
         >
           <Button
@@ -74,7 +86,7 @@ function App() {
       </>
 
       {/* {showChatBot && <ChatBot isVisible={showChatBot} />} */}
-      <>
+      {/* <>
         <FloatButton
           icon={<QuestionCircleOutlined />}
           type="primary"
@@ -84,7 +96,7 @@ function App() {
           }}
           onClick={() => setShowChatBot(!showChatBot)}
         />
-      </>
+      </> */}
       <Reproductor />
     </div>
   );

@@ -1,4 +1,4 @@
-.container {
+.container-comentarios {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -31,23 +31,42 @@
     border-radius: 5px;
     margin-bottom: 10px;
 }
+
+.comment-form form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
   
 .comment-form button {
-    background-color: var(--color-grisPizarra);
-    color: white;
-    border: none;
-    border-radius: 5px;
-    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    outline: none;
     cursor: pointer;
-    margin: 0 auto;
-    display: block;
-    transition: background-color 0.3s, color 0.3s;
-    font-size: 15px;
+    width: 150px;
+    height: 50px;
+    background-image: linear-gradient(to top, #D8D9DB 0%, #fff 80%, #FDFDFD 100%);
+    border-radius: 30px;
+    border: 1px solid #8F9092;
+    transition: all 0.2s ease;
+    font-family: "Source Sans Pro", sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+    color: #606060;
+    text-shadow: 0 1px #fff;
 }
   
 .comment-form button:hover {
-    background-color: var(--color-grisClaro);
-    color: black;
+    box-shadow: 0 4px 3px 1px #FCFCFC, 0 6px 8px #D6D7D9, 0 -4px 4px #CECFD1, 0 -6px 4px #FEFEFE, inset 0 0 3px 3px #CECFD1;
+}
+  
+.comment-form button:active {
+    box-shadow: 0 4px 3px 1px #FCFCFC, 0 6px 8px #D6D7D9, 0 -4px 4px #CECFD1, 0 -6px 4px #FEFEFE, inset 0 0 5px 3px #999, inset 0 0 30px #aaa;
+}
+  
+.comment-form button:focus {
+    box-shadow: 0 4px 3px 1px #FCFCFC, 0 6px 8px #D6D7D9, 0 -4px 4px #CECFD1, 0 -6px 4px #FEFEFE, inset 0 0 5px 3px #999, inset 0 0 30px #aaa;
 }
   
 .comment-list {
@@ -93,4 +112,46 @@
 .comment-card p {
     margin: 10px 0;
     color: var(--color-grisClaro);
+}
+
+/* Media query para pantallas pequeñas */
+@media (max-width: 768px) {
+    .container-comentarios {
+        margin-top: -10px;
+        margin-bottom: 60px;
+    }
+    .title-comentarios {
+        font-size: 50px;
+    }
+    .comment-container {
+        padding: 10px;
+        width: 330px;
+    }
+        
+    .comment-form {
+        margin-bottom: 5px;
+    }
+    .comment-form button {
+        width: 90px;
+        height: 30px;
+        font-size: 10px;
+        font-weight: 400;
+    }
+
+    .comment-list {
+        gap: 5px;
+        padding: 20px;
+        padding-top: 0;
+    }      
+    .comment-card {
+        padding: 5px;
+        width: 350px;
+    }    
+    .comment-card h3 {
+        margin: 0;
+        font-size: 15px;
+    }      
+    .comment-card p {
+        font-size: 12px;
+    }
 }
