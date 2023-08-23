@@ -4,21 +4,47 @@
     align-items: center;
 }
 
-.title {
+.title-regalos {
     text-align: center;
     margin-bottom: 10px;
     margin-top: 30px;
+    font-family: "titulo01";
+    font-size: 100px;
 }
 
 .info-regalos {
     background-color: grey;
     border-radius: 25px;
-    width: 700px;
-    height: 210px;
+    width: 1000px;
+    height: 500px;
+    padding-bottom: 20px;
 }
 .info-regalos p {
     font-size: 30px;
     text-align: center;
     color: white;
     padding: 10px;
+    font-family: "textos";
+}
+
+/* Media query para pantallas pequeñas */
+@media (max-width: 768px) {
+    .title-regalos {
+        font-size: 50px;
+        margin: 0;
+    }
+    .info-regalos {
+        background-color: grey;
+        border-radius: 25px;
+        width: 350px;
+        height: auto;
+        padding-bottom: 20px;
+    }
+    .info-regalos p {
+        font-size: 13px;
+        text-align: center;
+        color: white;
+        padding: 10px;
+        font-family: "textos";
+    }
 }

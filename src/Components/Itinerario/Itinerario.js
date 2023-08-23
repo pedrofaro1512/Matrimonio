@@ -3,14 +3,15 @@ import "./Itinerario.css";
 
 const Itinerario = () => {
   return (
-    <div className="container">
-      <div className="title">
-        <h1>ITINERARIO</h1>
+    <div className="container-itinerario">
+      <div className="title-itinerario">
+        <span>Itinerario</span>
       </div>
       <div className="itinerario-container">
         <div className="itinerario-ceremonia">
           <h1>CEREMONIA</h1>
-          <h3>Iglesia Nuestra Señora de Lourdes</h3>
+          <hr className="dividerI" />
+          <h3>Iglesia Nuestra Señora</h3>
           <h3>Carrera 7 # 72 - 45</h3>
           <h3>Bogotá</h3>
           <h3>3:30 pm</h3>
@@ -24,6 +25,7 @@ const Itinerario = () => {
         </div>
         <div className="itinerario-recepcion">
           <h1>RECEPCIÓN</h1>
+          <hr className="dividerI" />
           <h3>Hacienda Los Sauces</h3>
           <h3>Carrera 74a # 74 - 16</h3>
           <h3>Bogotá</h3>

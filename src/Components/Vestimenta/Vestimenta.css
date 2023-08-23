@@ -1,13 +1,20 @@
-.container {
+.container-vestimenta {
     display: flex;
     flex-direction: column;
     align-items: center;
+    padding-bottom: 30px;
 }
 
-.title {
+.title-vestimenta {
     text-align: center;
-    margin-bottom: 10px;
+    margin-bottom: 0;
     margin-top: 30px;
+    font-family: "titulo01";
+    font-size: 100px;
+}
+
+.text-help {
+    font-family: "textos";
 }
 
 .vestimenta-container {
@@ -15,22 +22,8 @@
     flex-wrap: wrap;
     justify-content: space-evenly;
     width: 100%;
-    padding: 20px;
+    padding: 0;
     box-sizing: border-box;
-}
-
-.box-container {
-    display: flex;
-    flex-direction: column;
-    flex: 1;
-    align-items: center;
-    justify-content: center;
-    border: 15px solid black;
-    border-radius: 25px;
-    max-width: 10%;
-    height: 400px;
-    background-color: rgb(255, 255, 255);
-    color: rgb(0, 0, 0);
 }
 
 .imagen {
@@ -39,16 +32,27 @@
     justify-content: center;
     width: auto;
 }
-.pareja {
-    width: 300px;
-    height: 300px;
+.hombres {
+    width: 200px;
+    height: 200px;
 }
 
-.vertical {
-    writing-mode: vertical-rl;
-    text-orientation: upright;
-    transform: rotate(0deg);
-    white-space: nowrap;
-    padding-bottom: 15px;
-    padding-top: 15px;
+/* Media query para pantallas pequeñas */
+@media (max-width: 768px) {
+    .title-vestimenta {
+        text-align: center;
+        margin-bottom: 0;
+        margin-top: -30px;
+        font-family: "titulo01";
+        font-size: 50px;
+    }
+    
+    .hombres {
+        width: 100px;
+        height: 100px;
+    }
+    .container-vestimenta {
+        margin-top: 20px;
+        padding-bottom: 10px;
+    }
 }

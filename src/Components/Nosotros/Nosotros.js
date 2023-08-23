@@ -1,39 +1,55 @@
 import React from "react";
 import "./Nosotros.css";
-import imagen01 from "../../asstes/img/imagen01.jpg";
 
 const Nosotros = () => {
   return (
     <div className="container">
-      <div className="title">
-        <h1>NOSOTROS</h1>
+      <div className="title-nosotros">
+        <span>Nosotros</span>
       </div>
       <div className="nosotros-container">
         <div className="nosotros-text">
           <p>
-            La pareja se casa para celebrar su profundo amor y conexión, que ha
-            crecido a través de risas, apoyo y aceptación mutua. Su matrimonio
-            representa un compromiso para construir un futuro juntos,
-            enfrentando la vida con amor y complicidad, sabiendo que su unión es
-            el camino hacia una eternidad de felicidad.
+            En medio del turbulento escenario de la pandemia del Covid-19,
+            floreció un lazo excepcional que trascendió las pantallas, uniendo
+            nuestras almas virtualmente. Ese destello inicial, surgido mientras
+            el mundo enfrentaba la distancia física, nos instó a explorarnos
+            mutuamente en un nivel profundo y conmovedor.
           </p>
           <p>
-            La pareja se casa para celebrar su profundo amor y conexión, que ha
-            crecido a través de risas, apoyo y aceptación mutua. Su matrimonio
-            representa un compromiso para construir un futuro juntos,
-            enfrentando la vida con amor y complicidad, sabiendo que su unión es
-            el camino hacia una eternidad de felicidad.
+            Sin embargo, el destino nos concedió una oportunidad y durante dos
+            meses, logramos elevar nuestra relación más allá del ámbito virtual,
+            compartiendo un espacio presencial donde los encuentros
+            enriquecieron nuestro vínculo. Estos momentos no solo nos
+            permitieron valorar las voces y risas compartidas en línea, sino
+            también descubrir los gestos y miradas que solo se despliegan en los
+            encuentros cara a cara.
           </p>
           <p>
-            La pareja se casa para celebrar su profundo amor y conexión, que ha
-            crecido a través de risas, apoyo y aceptación mutua. Su matrimonio
-            representa un compromiso para construir un futuro juntos,
-            enfrentando la vida con amor y complicidad, sabiendo que su unión es
-            el camino hacia una eternidad de felicidad.
+            En este contexto, nuestra historia personifica la esencia de
+            mantener el amor vivo en medio de la adversidad, demostrando que
+            incluso en tiempos desafiantes, el amor tiene el poder de florecer y
+            crecer en formas inesperadas y profundamente emotivas.
           </p>
         </div>
-        <div className="nosotros-image">
-          <img src={imagen01} alt="imagen01" />
+        <div className="nosotros-body">
+          <ul>
+            <li className="item1">
+              <div className="bg"></div>
+            </li>
+            <li className="item2">
+              <div className="bg"></div>
+            </li>
+            <li className="item3">
+              <div className="bg"></div>
+            </li>
+            <li className="item4">
+              <div className="bg"></div>
+            </li>
+            <li className="item5">
+              <div className="bg"></div>
+            </li>
+          </ul>
         </div>
       </div>
     </div>

@@ -1,10 +1,38 @@
 .menu-container {
+    position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100px;
+    background-color: white;
 }
 
 .ant-menu-item {
     font-size: 20px;
-  }
+}
+
+.letrasH img {
+    position: absolute;
+    top: 10px;
+    left: 20px;
+    width: 80px;
+    height: 80px;
+}
+
+/* Media query para pantallas pequeñas */
+@media (max-width: 768px) {
+    .ant-menu-item {
+      font-size: 10px;
+    }
+    
+    .letrasH img {
+        position: absolute;
+        top: 5px;
+        left: 20px;
+        width: 40px;
+        height: 40px;
+    }
+    .menu-container {
+        height: 50px;
+    }
+}

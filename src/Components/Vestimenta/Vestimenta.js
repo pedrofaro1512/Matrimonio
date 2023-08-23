@@ -1,30 +1,35 @@
 import React from "react";
 import "./Vestimenta.css";
-import pareja from "../../asstes/img/pareja.svg";
+import suit from "../../asstes/img/suit.png";
+import dress from "../../asstes/img/dress.png";
 
 const Vestimenta = () => {
   return (
-    <div className="container">
-      <div className="title">
-        <h1>CÓDIGO DE VESTIMENTA</h1>
+    <div className="container-vestimenta">
+      <div className="title-vestimenta">
+        <span>Código de vestimenta</span>
       </div>
       <div className="vestimenta-container">
-        <div className="box-container">
-          <div className="vertical">
-            <h1>Hombres</h1>
+        <a
+          href="https://co.pinterest.com/xiolar/trajes-para-boda-de-hombre/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <div className="imagen">
+            <img src={suit} alt="Hombres" className="hombres" />
           </div>
-          <h2>Formal</h2>
-        </div>
-        <div className="imagen">
-          <img src={pareja} alt="Pareja" className="pareja" />
-        </div>
-        <div className="box-container">
-          <div className="vertical">
-            <h1>Mujeres</h1>
+        </a>
+        <a
+          href="https://www.pinterest.es/bodaclick/vestidos-invitadas/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <div className="imagen">
+            <img src={dress} alt="Mujeres" className="hombres" />
           </div>
-          <h2>Formal</h2>
-        </div>
+        </a>
       </div>
+      <h3 className="text-help">Click en la imagen para sugerencias</h3>
     </div>
   );
 };

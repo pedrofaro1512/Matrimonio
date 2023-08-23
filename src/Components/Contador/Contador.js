@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { Typography } from "antd";
 import "./Contador.css";
+import "../../Fonts/fonts.css";
 
 const { Title } = Typography;
 
@@ -72,24 +73,32 @@ const Contador = () => {
 
   return (
     <div className="countdown-container">
-      <div className="title">
-        <h1>CUÁNTO FALTA?</h1>
+      <div className="title-contador">
+        <span>Cuánto falta?</span>
       </div>
       <div className="countdown-timer-horizontal">
         <div className="countdown-item">
-          <Title level={4}>{timeLeft.days}</Title>
+          <div className="pizarra">
+            <Title level={4}>{timeLeft.days}</Title>
+          </div>
           <span>Días</span>
         </div>
         <div className="countdown-item">
-          <Title level={4}>{timeLeft.hours}</Title>
+          <div className="rosado">
+            <Title level={4}>{timeLeft.hours}</Title>
+          </div>
           <span>Horas</span>
         </div>
         <div className="countdown-item">
-          <Title level={4}>{timeLeft.minutes}</Title>
+          <div className="pizarra">
+            <Title level={4}>{timeLeft.minutes}</Title>
+          </div>
           <span>Minutos</span>
         </div>
         <div className="countdown-item">
-          <Title level={4}>{timeLeft.seconds}</Title>
+          <div className="rosado">
+            <Title level={4}>{timeLeft.seconds}</Title>
+          </div>
           <span>Segundos</span>
         </div>
       </div>
