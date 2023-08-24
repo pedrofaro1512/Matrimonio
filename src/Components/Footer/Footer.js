@@ -16,7 +16,7 @@ const FooterM = () => {
       <div className="footer-content">
         <div>
           <h2>Natalia Cortes</h2>
-          <h3>Celulear: 310 3013196</h3>
+          <h3>Celular: 310 3013196</h3>
         </div>
         <div>
           <h2>Felipe Rodriguéz</h2>
