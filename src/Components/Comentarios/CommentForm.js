@@ -25,7 +25,7 @@ const CommentForm = ({ addComment }) => {
         <textarea
           rows="4"
           cols="50"
-          placeholder="Escribe un comentario para lo novios..."
+          placeholder="Déjanos tus mejores deseos..."
           value={newComment}
           onChange={(event) => setNewComment(event.target.value)}
         />

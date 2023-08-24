@@ -22,17 +22,17 @@ function App() {
   const [showBackTop, setShowBackTop] = useState(false);
   const [showChatBot, setShowChatBot] = useState(false);
 
-  //Código para desabilitar el click derecho
-  // const disableRightClick = (event) => {
-  //   event.preventDefault();
-  // };
+  // Código para desabilitar el click derecho
+  const disableRightClick = (event) => {
+    event.preventDefault();
+  };
 
-  // useEffect(() => {
-  //   document.addEventListener("contextmenu", disableRightClick);
-  //   return () => {
-  //     document.removeEventListener("contextmenu", disableRightClick);
-  //   };
-  // }, []);
+  useEffect(() => {
+    document.addEventListener("contextmenu", disableRightClick);
+    return () => {
+      document.removeEventListener("contextmenu", disableRightClick);
+    };
+  }, []);
 
   const handleScroll = () => {
     if (window.scrollY > 200) {

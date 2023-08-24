@@ -7,10 +7,6 @@
     background-color: white;
 }
 
-.ant-menu-item {
-    font-size: 20px;
-}
-
 .letrasH img {
     position: absolute;
     top: 10px;
@@ -19,12 +15,51 @@
     height: 80px;
 }
 
+.ant-menu-item {
+    font-size: 20px;
+    word-spacing: 0.1em; /* Espaciado entre palabras normal */
+}
+/* Estilos específicos para cada palabra en el menú */
+.ant-menu-item:nth-child(1) a {
+    /* Estilos para la primera palabra ("Nosotros") */
+    word-spacing: 0.05em; /* Espaciado entre palabras reducido */
+}
+.ant-menu-item:nth-child(2) a {
+    /* Estilos para la segunda palabra ("Cúando y donde") */
+    word-spacing: 0.05em; /* Espaciado entre palabras reducido */
+}
+.ant-menu-item:nth-child(3) a {
+    /* Estilos para la segunda palabra ("Nuestros momentos") */
+    word-spacing: 0.05em; /* Espaciado entre palabras reducido */
+}
+.ant-menu-item:nth-child(4) a {
+    /* Estilos para la segunda palabra ("Confirmación") */
+    word-spacing: 0.05em; /* Espaciado entre palabras reducido */
+}
+
 /* Media query para pantallas pequeñas */
-@media (max-width: 768px) {
+@media (max-width: 390px) {
     .ant-menu-item {
       font-size: 10px;
+      word-spacing: 0.05em;
     }
-    
+    .ant-menu-item:nth-child(1) a {
+        /* Estilos para la primera palabra ("Nosotros") */
+        word-spacing: 0; /* Espaciado entre palabras nulo */
+    }
+    .ant-menu-item:nth-child(2) a {
+        /* Estilos para la segunda palabra ("Cúando y donde") */
+        word-spacing: 0; /* Espaciado entre palabras nulo */
+    }
+    .ant-menu-item:nth-child(3) a {
+        /* Estilos para la segunda palabra ("Nuestros momentos") */
+        word-spacing: 0; /* Espaciado entre palabras reducido */
+    }
+    .ant-menu-item:nth-child(4) a {
+        /* Estilos para la segunda palabra ("Confirmación") */
+        word-spacing: 0; /* Espaciado entre palabras reducido */
+    }
+  
     .letrasH img {
         position: absolute;
         top: 5px;

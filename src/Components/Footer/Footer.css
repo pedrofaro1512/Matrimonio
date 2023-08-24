@@ -32,11 +32,15 @@
 
 /* Media query para pantallas pequeñas */
 @media (max-width: 768px) {
+    .footer {
+        height: 120px;
+    }
     .footer-content{
         display: flex;
-        flex-direction: row;
-        justify-content: flex-end;
-        gap: 20px;
+        flex-direction: column;
+        justify-content: flex-start;
+        padding-left: 50px;
+        gap: 10px;
     }
     .footer-content h2 {
         margin: 0;
@@ -48,13 +52,16 @@
     }
     
     .title-footer {
-        text-align: end;
+        text-align: start;
+        padding-left: 50px;
+        margin-top: 0;
+        
     }
     
     .letrasF img {
         position: absolute;
         top: 17px;
-        left: 30px;
+        left: 10px;
         width: 80px;
         height: 80px;
     }
