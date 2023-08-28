@@ -1,35 +1,29 @@
-import React, { useState } from "react";
-import { Menu } from "antd";
-import { Link } from "react-scroll";
+import React, { useState, useEffect } from "react";
 import couple from "../../asstes/img/couple.png";
 
 import "./Header.css";
 
-const items = [
-  {
-    label: "Nosotros",
-    key: "nosotros",
-  },
-  {
-    label: "Cúando y dónde",
-    key: "cronometro",
-  },
-  {
-    label: "Nuestros momentos",
-    key: "momentos",
-  },
-  {
-    label: "Confirmación",
-    key: "confirmacion",
-  },
-];
-
 const Header = () => {
-  const [current, setCurrent] = useState("null");
+  const [menuVisible, setMenuVisible] = useState(false);
 
-  const onClick = (event) => {
-    setCurrent(event.key);
+  const toggleMenu = () => {
+    setMenuVisible(!menuVisible);
   };
+
+  useEffect(() => {
+    const horizontalMenu = document.querySelector(".horizontal-menu");
+
+    if (menuVisible) {
+      horizontalMenu.style.display = "block";
+    } else {
+      horizontalMenu.style.display = "none";
+    }
+  }, [menuVisible]);
+
+  useEffect(() => {
+    const horizontalMenu = document.querySelector(".horizontal-menu");
+    horizontalMenu.style.display = window.innerWidth > 390 ? "flex" : "none";
+  }, []);
 
   return (
     <div className="menu-container">
@@ -37,21 +31,25 @@ const Header = () => {
         <img src={couple} alt="Letras"></img>
       </div>
       <div className="menu-items">
-        <Menu onClick={onClick} selectedKeys={[current]} mode="horizontal">
-          {items.map((item) => (
-            <Menu.Item key={item.key}>
-              <Link
-                to={item.key}
-                spy={true}
-                smooth={true}
-                duration={1500}
-                offset={-10}
-              >
-                {item.label}
-              </Link>
-            </Menu.Item>
-          ))}
-        </Menu>
+        <button className="hamburger-btn" onClick={toggleMenu}>
+          <span className="bar"></span>
+          <span className="bar"></span>
+          <span className="bar"></span>
+        </button>
+        <ul className="horizontal-menu">
+          <li>
+            <a href="#nosotros">Nosotros</a>
+          </li>
+          <li>
+            <a href="#cronometro">Cúando y dónde</a>
+          </li>
+          <li>
+            <a href="#momentos">Nuestros momentos</a>
+          </li>
+          <li>
+            <a href="#confirmacion">Confirmación</a>
+          </li>
+        </ul>
       </div>
     </div>
   );

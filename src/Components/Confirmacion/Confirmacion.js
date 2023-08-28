@@ -1,20 +1,29 @@
 import React from "react";
+import db from "../../utils/firebase";
+import { collection, addDoc } from "firebase/firestore";
+import "firebase/firestore";
 import "./Confirmacion.css";
-import { Form, Input, Radio, Checkbox, message, Select } from "antd";
+import { Form, Input, message, Select } from "antd";
 
 const Confirmacion = () => {
   const [form] = Form.useForm();
 
-  const onChange = (value) => {
-    //console.log(`selected ${value}`);
-  };
+  const onChange = (value) => {};
+
   const onSearch = (value) => {
     console.log("search:", value);
   };
 
-  const onFinish = (values) => {
+  const onFinish = async (values) => {
     console.log("Form data:", values);
-    //console.log(`selected ${values}`);
+    try {
+      const docRef = await addDoc(collection(db, "confirmación"), {
+        Nombre: values.name,
+        Menú: values.menu,
+      });
+    } catch (e) {
+      console.error("Error adding document: ", e);
+    }
     message.success({
       content: "¡Asistencia confirmada!",
       style: {
@@ -42,29 +51,8 @@ const Confirmacion = () => {
             <Input style={{ width: "350px" }} />
           </Form.Item>
 
-          {/* <Form.Item
-            name="Novia/Novio"
-            label={
-              <span style={{ fontWeight: "bold", fontSize: 20 }}>
-                Nos acompañas de parte de
-              </span>
-            }
-            rules={[
-              { required: true, message: "Por favor selecciona una opción" },
-            ]}
-          >
-            <Radio.Group>
-              <Radio value="novia" style={{ fontSize: 20 }}>
-                Novia
-              </Radio>
-              <Radio value="novio" style={{ fontSize: 20 }}>
-                Novio
-              </Radio>
-            </Radio.Group>
-          </Form.Item> */}
-
           <Form.Item
-            name="Menu"
+            name="menu"
             label={
               <span style={{ fontWeight: "bold", fontSize: 20 }}>
                 Escoge tu menú
@@ -105,27 +93,6 @@ const Confirmacion = () => {
               ]}
             />
           </Form.Item>
-
-          {/* <Form.Item
-            name="Asistira"
-            label={
-              <span style={{ fontWeight: "bold", fontSize: 20 }}>
-                Asistiras a
-              </span>
-            }
-            rules={[
-              { required: true, message: "Por favor selecciona una opción" },
-            ]}
-          >
-            <Checkbox.Group>
-              <Checkbox value="Ceremonia" style={{ fontSize: 20 }}>
-                Ceremonia
-              </Checkbox>
-              <Checkbox value="Recepción" style={{ fontSize: 20 }}>
-                Recepción
-              </Checkbox>
-            </Checkbox.Group>
-          </Form.Item> */}
 
           <button type="submit">Confirmar asistencia</button>
         </Form>
