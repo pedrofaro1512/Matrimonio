@@ -1,65 +1,75 @@
 .menu-container {
-    position: relative;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
-    height: 100px;
-    background-color: white;
+    padding: 20px;
+    position: relative;
 }
-
-.letrasH img {
-    position: absolute;
-    top: 10px;
-    left: 20px;
-    width: 80px;
-    height: 80px;
-}
-
-.ant-menu-item {
+  
+  .letrasH img {
+    max-width: 100px;
+    padding-top: 5px;
+  }
+  
+  .horizontal-menu {
+    list-style: none; 
+    display: flex;
+    gap: 40px;
+    padding-right: 20px;
+  }
+  
+  .horizontal-menu li {
     font-size: 20px;
-    word-spacing: 0.1em; /* Espaciado entre palabras normal */
-}
-/* Estilos específicos para cada palabra en el menú */
-.ant-menu-item:nth-child(1) a {
-    /* Estilos para la primera palabra ("Nosotros") */
-    word-spacing: 0.05em; /* Espaciado entre palabras reducido */
-}
-.ant-menu-item:nth-child(2) a {
-    /* Estilos para la segunda palabra ("Cúando y donde") */
-    word-spacing: 0.05em; /* Espaciado entre palabras reducido */
-}
-.ant-menu-item:nth-child(3) a {
-    /* Estilos para la segunda palabra ("Nuestros momentos") */
-    word-spacing: 0.05em; /* Espaciado entre palabras reducido */
-}
-.ant-menu-item:nth-child(4) a {
-    /* Estilos para la segunda palabra ("Confirmación") */
-    word-spacing: 0.05em; /* Espaciado entre palabras reducido */
-}
+  }
+  
+  .horizontal-menu li a {
+    text-decoration: none;
+    color: #000000;
+    transition: color 0.3s ease;
+    font-size: 25px;
+  }
+  
+  .horizontal-menu li a:hover {
+    color: rgb(60, 60, 185);
+  }
+  
+  .hamburger-btn {
+    position: absolute;
+    top: 5px;
+    right: 10px;
+    display: none;
+    cursor: pointer;
+    background: none;
+    border: none;
+    padding: 10px;
+  }
+  
+  .bar {
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    background-color: #000000;
+  }
 
 /* Media query para pantallas pequeñas */
 @media (max-width: 390px) {
-    .ant-menu-item {
-      font-size: 10px;
-      word-spacing: 0.05em;
+    .menu-container {
+        padding: 30px;
+        height: auto;
     }
-    .ant-menu-item:nth-child(1) a {
-        /* Estilos para la primera palabra ("Nosotros") */
-        word-spacing: 0; /* Espaciado entre palabras nulo */
-    }
-    .ant-menu-item:nth-child(2) a {
-        /* Estilos para la segunda palabra ("Cúando y donde") */
-        word-spacing: 0; /* Espaciado entre palabras nulo */
-    }
-    .ant-menu-item:nth-child(3) a {
-        /* Estilos para la segunda palabra ("Nuestros momentos") */
-        word-spacing: 0; /* Espaciado entre palabras reducido */
-    }
-    .ant-menu-item:nth-child(4) a {
-        /* Estilos para la segunda palabra ("Confirmación") */
-        word-spacing: 0; /* Espaciado entre palabras reducido */
+    .hamburger-btn {
+      display: block;
     }
   
+    .horizontal-menu {
+      display: none; 
+    }
+
+    .show {
+        display: block !important;
+    }
+
     .letrasH img {
         position: absolute;
         top: 5px;
@@ -67,7 +77,18 @@
         width: 40px;
         height: 40px;
     }
-    .menu-container {
-        height: 50px;
-    }
+
+    .horizontal-menu {
+        list-style: none; 
+        display: flex;
+        margin: 0;
+        margin-top: -20px;
+      }
+      
+      .horizontal-menu li a {
+        transition: color 0.3s ease;
+        font-size: 12px;
+      }
 }
+
+  

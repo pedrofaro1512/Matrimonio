@@ -91,7 +91,7 @@
 .divider {
     position: absolute;
     width: 90%;
-    top: 30%;
+    top: 30px;
     transform: translateY(-50%);
     background: linear-gradient(
         to right,
@@ -153,5 +153,8 @@
     }      
     .comment-card p {
         font-size: 12px;
+    }
+    .divider {
+        top: 20px;
     }
 }

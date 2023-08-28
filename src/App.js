@@ -16,8 +16,6 @@ import Reproductor from "./Components/Reproductor/Reproductor";
 import { QuestionCircleOutlined, UpOutlined } from "@ant-design/icons";
 import { FloatButton, Button, BackTop } from "antd";
 
-//import "./App.css";
-
 function App() {
   const [showBackTop, setShowBackTop] = useState(false);
   const [showChatBot, setShowChatBot] = useState(false);
