@@ -13,7 +13,7 @@ const Comentarios = () => {
   useEffect(() => {
     const obtenerDatos = async () => {
       try {
-        const datos = await getDocs(collection(db, "comentarios"));
+        const datos = await getDocs(collection(db, "comentario"));
         const commentList = datos.docs.map((doc) => doc.data());
         setComments(commentList);
       } catch (error) {
