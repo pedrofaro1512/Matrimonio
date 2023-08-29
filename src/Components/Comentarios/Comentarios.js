@@ -30,7 +30,7 @@ const Comentarios = () => {
   return (
     <div className="container-comentarios">
       <div className="title-comentarios">
-        <span>Comentarios</span>
+        <span>Déjanos tus mejores deseos</span>
       </div>
       <div className="comment-list">
         {comments.map((comment, index) => (
