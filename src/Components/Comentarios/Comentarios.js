@@ -13,7 +13,7 @@ const Comentarios = () => {
   useEffect(() => {
     const obtenerDatos = async () => {
       try {
-        const datos = await getDocs(collection(db, "comentarios"));
+        const datos = await getDocs(collection(db, "comentario"));
         const commentList = datos.docs.map((doc) => doc.data());
         setComments(commentList);
       } catch (error) {
@@ -30,7 +30,7 @@ const Comentarios = () => {
   return (
     <div className="container-comentarios">
       <div className="title-comentarios">
-        <span>Comentarios</span>
+        <span>Déjanos tus mejores deseos</span>
       </div>
       <div className="comment-list">
         {comments.map((comment, index) => (
