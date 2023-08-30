@@ -2,13 +2,15 @@ import React from "react";
 import db from "../../utils/firebase";
 import { collection, addDoc } from "firebase/firestore";
 import "firebase/firestore";
-import "./Confirmacion.css";
 import { Form, Input, message, Select } from "antd";
+import guestList from "./guestList";
+
+import "./Confirmacion.css";
 
 const Confirmacion = () => {
   const [form] = Form.useForm();
 
-  const onChange = (value) => {};
+  const onChange = () => {};
 
   const onSearch = (value) => {
     console.log("search:", value);
@@ -16,14 +18,30 @@ const Confirmacion = () => {
 
   const onFinish = async (values) => {
     console.log("Form data:", values);
+
+    if (!guestList.includes(values.name)) {
+      message.error({
+        content: "Lo lamentamos. Tu nombre no está en la lista de invitados.",
+        style: {
+          fontSize: "25px",
+          fontFamily: "textos",
+        },
+      });
+      form.resetFields();
+      return;
+    }
+
+    const nombreIngresado = values.name;
+
     try {
       const docRef = await addDoc(collection(db, "confirmación"), {
-        Nombre: values.name,
+        Nombre: nombreIngresado,
         Menú: values.menu,
       });
     } catch (e) {
       console.error("Error adding document: ", e);
     }
+
     message.success({
       content: "¡Asistencia confirmada!",
       style: {
@@ -48,7 +66,13 @@ const Confirmacion = () => {
             }
             rules={[{ required: true, message: "Por favor ingresa tu nombre" }]}
           >
-            <Input style={{ width: "350px" }} />
+            <Input
+              style={{ width: "350px" }}
+              onChange={(event) => {
+                const upperCaseValue = event.target.value.toUpperCase();
+                form.setFieldsValue({ name: upperCaseValue });
+              }}
+            />
           </Form.Item>
 
           <Form.Item
@@ -81,14 +105,6 @@ const Confirmacion = () => {
                 {
                   value: "cerdo",
                   label: "Cerdo",
-                },
-                {
-                  value: "pescado",
-                  label: "Pescado",
-                },
-                {
-                  value: "ensalada",
-                  label: "Ensalada",
                 },
               ]}
             />
