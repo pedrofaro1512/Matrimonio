@@ -74,6 +74,10 @@ const Confirmacion = () => {
               }}
             />
           </Form.Item>
+          <span style={{ fontWeight: "bold", fontSize: 15 }}>
+            Escriba solo su primer nombre y primer apellido
+          </span>
+          <br></br>
 
           <Form.Item
             name="menu"
