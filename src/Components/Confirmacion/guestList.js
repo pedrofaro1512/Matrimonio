@@ -9,7 +9,7 @@ const guestList = [
   "MARIO BROS",
   "PRINCESA PEACH",
   "GILBERTO SANTA ROSA",
-  "VECENTE FERNANDEZ",
+  "VICENTE FERNANDEZ",
 ];
 
 export default guestList;
