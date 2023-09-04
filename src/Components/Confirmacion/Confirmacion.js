@@ -3,7 +3,6 @@ import db from "../../utils/firebase";
 import { collection, addDoc } from "firebase/firestore";
 import "firebase/firestore";
 import { Form, Input, message, Select } from "antd";
-import guestList from "./guestList";
 
 import "./Confirmacion.css";
 
@@ -18,18 +17,6 @@ const Confirmacion = () => {
 
   const onFinish = async (values) => {
     console.log("Form data:", values);
-
-    if (!guestList.includes(values.name)) {
-      message.error({
-        content: "Lo lamentamos. Tu nombre no está en la lista de invitados.",
-        style: {
-          fontSize: "25px",
-          fontFamily: "textos",
-        },
-      });
-      form.resetFields();
-      return;
-    }
 
     const nombreIngresado = values.name;
 
